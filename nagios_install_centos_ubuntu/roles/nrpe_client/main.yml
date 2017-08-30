@@ -1,0 +1,6 @@
+---
+- name: install nrpe
+  yum: name={{ item }} state=latest
+    - epel-release
+    - nrpe nagios-plugins-all
+  

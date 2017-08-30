@@ -1,0 +1,8 @@
+---
+- name: install nagios core for centos
+  hosts: nagios_server
+  remote_user: root
+
+  roles:
+    - common
+    - nagios_server

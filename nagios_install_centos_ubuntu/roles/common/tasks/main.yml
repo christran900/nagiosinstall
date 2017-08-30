@@ -1,0 +1,18 @@
+---
+
+- name: install something need
+  yum: name={{ item }} state=latest
+  with_items:
+   - gcc
+   - glibc
+   - glibc-common
+   - gd
+   - gd-devel
+   - make
+   - net-snmp
+   - openssl-devel
+   - xinetd
+   - unzip
+   - httpd
+- name: install pass-lib
+  yum: pkg=epel-release state=present

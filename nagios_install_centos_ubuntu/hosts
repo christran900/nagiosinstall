@@ -1,0 +1,4 @@
+[nagios_server]
+192.168.67.224  #nagios core
+[ubuntu_server]
+192.168.70.97 #remote
